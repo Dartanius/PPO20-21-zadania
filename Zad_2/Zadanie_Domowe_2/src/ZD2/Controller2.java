@@ -8,21 +8,17 @@ import javafx.scene.layout.BorderPane;
 public class Controller2 {
 	
 	private Scene s;
-	private BorderPane root1;
+	private BorderPane root2;
 	
 
 	@FXML Button Butt2;
 
 	@FXML public void ChangeRoot() {
-		getS().setRoot(getRoot1());
+		s.setRoot(root2);
 	}
 
-	public BorderPane getRoot1() {
-		return root1;
-	}
-
-	public void setRoot1(BorderPane root1) {
-		this.root1 = root1;
+	public BorderPane getRoot2() {
+		return root2;
 	}
 
 	public Scene getS() {
@@ -32,5 +28,10 @@ public class Controller2 {
 	public void setS(Scene s) {
 		this.s = s;
 	}
+	
+	public void setRoot2(BorderPane root2) {
+		this.root2 = root2;
+	}
+
 
 }
